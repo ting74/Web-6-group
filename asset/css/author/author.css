@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* 滾動條 */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+.arrow-left {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid black;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.arrow-left:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.arrow-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-bg {
+    background-image: url(../../picture/author/bg.jpg);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 10px 50px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.item {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 3px dashed white;
+    /* padding: 10px; */
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid black;
+    border-radius: 15px;
+    color: black;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+    padding: 40px;
+    cursor: pointer;
+}
+
+#pt {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 30px 30px 10px 10px;
+}
+
+.right h2 {
+    border-bottom: 1px dashed white;
+    padding: 5px 0 5px 5px;
+}
+
+.right p {
+    padding: 5px 0 5px 5px;
+}
+
+.bigitem {
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    display: none;
+}
+
+.b-top,
+.b-top img {
+    width: 100%;
+    height: 100%;
+}
+
+.b-bottom {
+    display: none;
+}
+
+.close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.close img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    font-size: 0.5rem;
+    line-height: 1.5;
+    background-color: rgb(12, 14, 23);
+    text-align: center;
+    color: white;
+}

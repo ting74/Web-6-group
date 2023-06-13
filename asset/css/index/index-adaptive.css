@@ -1,0 +1,377 @@
+@media screen and (max-width:1001px) {
+    .main-container {
+        width: 1000px;
+        height: 2176px;
+    }
+
+    .top {
+        height: 147px;
+    }
+
+    .Logo {
+        top: 167px;
+        height: 330px;
+        width: 416px;
+    }
+
+    .food-bg {
+        top: 255px;
+        height: 298px;
+        width: 447px;
+    }
+
+    .food {
+        top: 268px;
+        height: 271px;
+        width: 432px;
+
+    }
+
+    .viewpoint {
+        top: 695px;
+        width: 263px;
+        height: 554px;
+    }
+
+    .traffic {
+        top: 1596px;
+        width: 168px;
+        height: 343px;
+    }
+
+    .interactive1 {
+        top: 1495px;
+        left: 34px;
+        height: 377px;
+        width: 258px;
+    }
+
+    .interactive2 {
+        top: 1334px;
+        right: 218px;
+        height: 328px;
+        width: 282px;
+    }
+
+    .decoration {
+
+        top: 636px;
+        right: 205px;
+        height: 193px;
+        width: 265px;
+    }
+
+    .footer {
+        height: 270px;
+    }
+
+    .footer-item:nth-child(2) {
+        height: 220px;
+    }
+
+    .people {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:801px) {
+    .main-container {
+        width: 800px;
+        height: 1741px;
+    }
+
+    .top {
+        height: 118px;
+    }
+
+    .Logo {
+        top: 133px;
+        height: 266px;
+        width: 333px;
+    }
+
+    .food-bg {
+        top: 205px;
+        height: 235px;
+        width: 357px;
+
+
+    }
+
+    .food {
+        top: 217px;
+        height: 210px;
+        width: 343px;
+
+    }
+
+    .viewpoint {
+        top: 556px;
+        width: 210px;
+        height: 444px;
+    }
+
+    .traffic {
+        top: 1277px;
+        width: 134px;
+        height: 274px;
+    }
+
+    .interactive1 {
+        top: 1195px;
+        left: 24px;
+        height: 305px;
+        width: 216px;
+    }
+
+    .interactive2 {
+        top: 1068px;
+        right: 171px;
+        height: 262px;
+        width: 230px;
+    }
+
+    .decoration {
+        top: 508px;
+        right: 165px;
+        height: 155px;
+        width: 211px;
+    }
+
+    .footer {
+        height: 250px;
+    }
+
+    .footer-item:nth-child(2) {
+        height: 190px;
+    }
+
+    .b-left {
+        display: none;
+    }
+
+    #fb {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width:501px) {
+    .main-container {
+        width: 500px;
+        height: 1088px;
+    }
+
+    .top {
+        height: 74px;
+    }
+
+    .Logo {
+        top: 84px;
+        height: 166px;
+        width: 208px;
+    }
+
+    .food-bg {
+        top: 128px;
+        height: 148px;
+        width: 223px;
+
+    }
+
+    .food {
+        top: 135px;
+        height: 134px;
+        width: 215px;
+    }
+
+    .viewpoint {
+        top: 348px;
+        width: 131px;
+        height: 277px;
+    }
+
+    .traffic {
+        top: 799px;
+        width: 85px;
+        height: 172px;
+    }
+
+    .interactive1 {
+        top: 748px;
+        left: 14px;
+        height: 190px;
+        width: 136px;
+    }
+
+    .interactive2 {
+        top: 662px;
+        right: 105px;
+        height: 175px;
+        width: 147px;
+    }
+
+    .decoration {
+        top: 317px;
+        right: 103px;
+        height: 98px;
+        width: 133px;
+    }
+
+    .back {
+        width: 150px;
+        height: 192px;
+        bottom: -25px;
+        right: -30px;
+    }
+
+    .footer {
+        height: 200px;
+    }
+
+    .footer-item:nth-child(2) {
+        height: 150px;
+        width: 600px;
+    }
+
+    .b-r-item:nth-child(1) {
+        height: 20px;
+    }
+
+    #footer-a {
+        font-size: 0.75rem;
+    }
+
+    .b-r-item div:not(:nth-child(1)) {
+        font-size: 0.75rem;
+    }
+
+    #f-logo {
+        width: 70px;
+        height: 35px;
+    }
+
+    #fb {
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:391px) {
+    .main-container {
+        width: 390px;
+        height: 848px;
+    }
+
+    .navitem {
+        width: 90px;
+    }
+
+    .top {
+        height: 58px;
+
+    }
+
+    .Logo {
+        top: 65px;
+        height: 130px;
+        width: 164px;
+    }
+
+    .food-bg {
+        top: 100px;
+        height: 113px;
+        width: 173px;
+
+    }
+
+    .food {
+        top: 107px;
+        height: 100px;
+        width: 167px;
+    }
+
+    .viewpoint {
+        top: 271px;
+        width: 104px;
+        height: 216px;
+    }
+
+    .traffic {
+        top: 623px;
+        width: 65px;
+        height: 135px;
+    }
+
+    .interactive1 {
+        top: 583px;
+        left: 13px;
+        height: 149px;
+        width: 103px;
+    }
+
+    .interactive2 {
+        top: 520px;
+        right: 81px;
+        height: 129px;
+        width: 116px;
+    }
+
+    .decoration {
+        top: 249px;
+        right: 79px;
+        height: 75px;
+        width: 104px;
+    }
+
+    .back {
+        width: 100px;
+        height: 128px;
+        bottom: -25px;
+        right: -30px;
+    }
+
+    .footer-item:nth-child(2) {
+        height: 90px;
+        width: 100%
+    }
+
+    .footer {
+        height: 100px;
+        ;
+    }
+
+    .footer-item:nth-child(1) {
+        width: 0px;
+        height: 0px;
+    }
+
+    .b-left {
+        display: none;
+    }
+
+    .b-right {
+        width: 100%;
+    }
+
+    .b-r-item:nth-child(1) {
+        display: none;
+    }
+
+    .b-r-item:nth-child(2) div {
+        height: 25px;
+    }
+
+    .people {
+        width: 0px;
+        height: 0px;
+    }
+
+    #f-logo {
+        height: 30px;
+    }
+
+}

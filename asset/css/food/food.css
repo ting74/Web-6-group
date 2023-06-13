@@ -1,0 +1,567 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* 回到最頂端按鈕 */
+#up {
+    position: absolute;
+    top: 0;
+}
+
+.back {
+    position: fixed;
+    z-index: 1000;
+    bottom: -50px;
+    right: -40px;
+    width: 200px;
+    height: 256px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-2000px);
+    transition: all 1s ease;
+}
+
+.back-show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.back img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* 滾動條 */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #535353;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #ededed;
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* 導覽列 */
+.nav-container {
+    margin: auto;
+    max-width: 1100px;
+}
+
+.navigation-bg {
+    position: sticky;
+    top: 0;
+    z-index: 1500;
+    /* background-color: rgb(115, 115, 115); */
+    background-color: rgb(12, 14, 23);
+}
+
+.navigation {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#nav-logo {
+    margin-left: 10px;
+    display: block;
+    height: 50px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+}
+
+.navitem {
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nav-a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 5px;
+    background-color: #fff;
+    transition: 0.25s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-a:hover::after {
+    width: 100%;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+.t-Container {
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100vw; */
+    background-color: rgb(255, 229, 189);
+    transition: background-color 3s;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.t-container {
+    width: 650px;
+    height: 650px;
+    background-color: rgb(255, 229, 189);
+    position: relative;
+    transition: transform 3s, background-color 3s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.box {
+    cursor: pointer;
+}
+
+.star {
+    width: 250px;
+    height: 250px;
+}
+
+.star:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../picture/food/sun.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.star:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../../picture/food/moon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rotate-left {
+    transform: rotate(-180deg);
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+.m-Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    position: relative;
+    top: -725px;
+    margin-bottom: -725px;
+}
+
+.topic {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+
+.topic:nth-child(1) {
+    width: 50%;
+    height: 210px;
+    margin-bottom: 100px;
+}
+
+.type {
+    width: 100%;
+    height: 210px;
+    background-color: rgb(115, 115, 115);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.type-item {
+    width: 100%;
+    height: 50%;
+    border: 5px solid white;
+    font-weight: bold;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type-item.bt {
+    background-color: white;
+}
+
+.name {
+    margin-left: 50px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    border-style: solid;
+    border-width: 5px 5px 0px 5px;
+    background-color: #e1b09c;
+    height: 100%;
+    width: 39%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.people {
+    height: 80%;
+    width: auto;
+    align-self: self-end;
+    margin-left: 170px;
+}
+
+#people {
+    width: 100%;
+    height: 100%;
+}
+
+/* ------------------------------------------ */
+.m-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(188, 92, 85);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 200px;
+    border: 5px solid black;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.m-item {
+    width: 250px;
+    height: 200px;
+    background-color: #fad373;
+    border: 5px solid black;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    /* overflow: visible; */
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.m-item:hover {
+    transform: translateY(-10px);
+}
+
+.m-item:hover img {
+    display: none;
+}
+
+.m-item-pt {
+    transition: transform 3s ease;
+    cursor: pointer;
+    width: 250px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-item-pt img {
+    width: 250px;
+    height: 200px;
+}
+
+.m-item-pt p {
+    width: 240px;
+    line-height: 190px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #fad373;
+    color: black;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+/* .drink-Container {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    border-width: 0px 5px 5px 5px;
+    border-style: solid;
+} */
+
+.decoration {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border-width: 0 5px 0px 5px; */
+    border-style: solid;
+}
+
+.ditem {
+    flex-basis: calc(100%/13);
+    height: 100%;
+    border: 2px solid black;
+}
+
+.r {
+    background-color: #f0806c;
+}
+
+.w {
+    background-color: #fff;
+}
+
+.drink-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+    /* justify-content: space-evenly; */
+    background-color: rgb(188, 92, 85);
+    padding: 30px 20px 30px 20px;
+    border-width: 5px 5px 5px 5px;
+    border-style: solid;
+}
+
+.d-item {
+    width: 250px;
+    height: 300px;
+    background-color: #fad373;
+    border: 5px solid black;
+    border-radius: 50% 50% 0% 0%;
+    overflow: hidden;
+    padding: 45px 0px 0px 0px;
+}
+
+.d-item p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------- */
+.big-m-item {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+    overflow-y: scroll;
+}
+
+.bmt-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 650px;
+    background-color: #e1b09c;
+    background: bottom right url(../../picture/food/food-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 5px solid black;
+}
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    /* background-color: blue; */
+    cursor: pointer;
+    z-index: 100;
+}
+
+.close:hover {
+    background-color: #f0806c;
+}
+
+.close img {
+    width: 100%;
+    height: 100%;
+}
+
+.pt-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.content {
+    width: 77%;
+    height: 220px;
+    padding: 30px 10px 10px 10px;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.picture {
+    width: 49%;
+    height: 400px;
+    border: 5px solid black;
+    padding: 5px;
+}
+
+/* ----------------------------- */
+/* swiper設定 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    height: 80%;
+    width: 100%;
+    --swiper-navigation-color: #fff;
+    --swiper-pagination-color: #fff;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 5px 0 0 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------- */
+.map-container {
+    width: 45%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(to left, #000, #000) left top no-repeat,
+        linear-gradient(to bottom, #000, #000) left top no-repeat,
+        linear-gradient(to left, #000, #000) right top no-repeat,
+        linear-gradient(to bottom, #000, #000) right top no-repeat,
+        linear-gradient(to left, #000, #000) left bottom no-repeat,
+        linear-gradient(to bottom, #000, #000) left bottom no-repeat,
+        linear-gradient(to left, #000, #000) right bottom no-repeat,
+        linear-gradient(to left, #000, #000) right bottom no-repeat;
+    background-size: 10px 50px, 50px 10px, 10px 50px, 50px 10px;
+    padding: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+.footer {
+    width: 100%;
+    bottom: 0;
+    font-size: 0.5rem;
+    line-height: 1.5;
+    background-color: rgb(12, 14, 23);
+    text-align: center;
+    color: white;
+}
