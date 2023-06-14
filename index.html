@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yzulife</title>
+    <link rel="stylesheet" href="./asset/css/index/index.css">
+    <link rel="stylesheet" href="./asset/css/index/index-adaptive.css">
+    <script src="./asset/js/jquery.js"></script>
+    </script>
+</head>
+<script>
+    $(window).load(function () { // 確認整個頁面讀取完畢再將這三個div隱藏起來
+        $("#status").delay(500).fadeOut(300); //delay --> 延遲幾秒才fadeOut
+        $("#preloader").delay(700).fadeOut(300);
+    })
+</script>
+
+<body>
+
+    <div id="preloader">
+        <div id="status"><img src="./asset/picture/index/loading.gif" alt=""><br>Loading...<br>美好的生活就在眼前<br></div>
+    </div>
+    <div class="navigation-bg">
+        <div class="nav-container navigation">
+            <a href="./index.html">
+                <img id="nav-logo" src="./asset/picture/index/新logo.png" alt="">
+            </a>
+            <ul class="nav">
+                <li class="navitem"><a href="./viewpoint.html" class="nav-a">景点</a></li>
+                <li class="navitem"><a href="./food.html" class="nav-a">食物</a></li>
+                <li class="navitem"><a href="./traffic.html" class="nav-a">交通</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="up"></div>
+    <div class="main-bg">
+        <div class="main-container">
+            <div class="top">
+                <img src="./asset/picture/index/top.gif" alt="">
+            </div>
+            <div class="Logo"></div>
+            <div class="food-bg"></div>
+            <div class="food">
+                <a href="./food.html"><img src="./asset/picture/index/foodGif.gif" alt=""></a>
+            </div>
+            <div class="viewpoint">
+                <a href="./viewpoint.html"><img src="./asset/picture/index/viewpointGif.gif" alt=""></a>
+            </div>
+            <div class="traffic">
+                <a href="./traffic.html"><img src="./asset/picture/index/trafficGif.gif" alt=""></a>
+            </div>
+            <div class="interactive1"><img src="./asset/picture/index/互動動畫1.gif" alt=""></div>
+            <div class="interactive2"><img src="./asset/picture/index/互動動畫2.gif" alt=""></div>
+            <div class="decoration"><img src="./asset/picture/index/decoration.gif" alt=""></div>
+        </div>
+    </div>
+    <a href="#up" class="back" title="回到頂端"><img src="./asset/picture/index/up-rocket.gif" alt=""></a>
+    <div class="footer-bg">
+        <div class="footer">
+            <div class="footer-item">
+                <img src="./asset/picture/index/footeryellow.png" alt="">
+            </div>
+            <div class="footer-item">
+                <div class="b-left"><img src="./asset/picture/index/footer7.png" alt=""></div>
+                <div class="b-right">
+                    <div class="b-r-item"></div>
+                    <div class="b-r-item">
+                        <div>
+                            <a id="footer-a" href="mailto:s1112040@mail.yzu.edu.tw">聯絡作者</a>
+                            <a id="footer-a" href="./author.html">網頁團隊</a>
+                            <a id="footer-a" href="./source.html">資料來源</a>
+                            <a href="https://www.facebook.com/yzu.edu?mibextid=ZbWKwL" target="_blank">
+                                <img id="fb" src="./asset/picture/index/facebook.png" alt="">
+                            </a>
+                            <img id="f-logo" src="./asset/picture/index/新logo.png" alt="">
+                        </div>
+                        <div>桃園市中壢區遠東路135號</div>
+                        <div>Copyright © 2023 yzulife</div>
+                    </div>
+                    <div class="people">
+                        <img src="./asset/picture/index/footerpeople.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo-content">
+        <h2 class="introh2">YZU LIFE</h2>
+        <p class="intro"></p>
+    </div>
+
+    <script>
+        //當瀏覽器寬度小於500px，將跳出的警示
+        if (window.innerWidth < 500) {
+            alert('建議使用電腦瀏覽，如果是手機，無法享有完整網頁效果');
+        }
+    </script>
+    <Script>
+        // 讓頁面重整時 可以回到最頂部
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    </Script>
+    <script>
+        window.addEventListener('scroll', function () {
+            var backElement = document.querySelector('.back');
+            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollPosition >= 200) {
+                backElement.classList.add('back-show');
+            } else {
+                backElement.classList.remove('back-show');
+            }
+        });
+    </script>
+    <script>
+        var logo = document.querySelector('.Logo');
+        var logoContent = document.querySelector('.logo-content');
+
+        logo.addEventListener('click', function (event) {
+            event.stopPropagation();
+            logoContent.style.display = 'block';
+        });
+
+        document.addEventListener('click', function (event) {
+            logoContent.style.display = 'none';
+        });
+    </script>
+    <script>
+        //文字逐字顯示
+        const text = '這裡是YZU LIFE\n\n準備好面對大學生活了嗎?\n這是新生們一個\n熟悉本校周邊的網站\n讓大家能更進一步\n了解校園特色，生活機能\n以及各種活動，包含交通、\n社團，租屋等等對\n于那些遠離家鄉的同學\n能安心得到第一手資訊\n儘管在陌生的環境中也不會感\n到一絲一毫的孤單\n我們在這裏等著你\n體驗全新的大學生活\n';
+        let index = -1;
+        const timer = setInterval(() => {
+            if (index < text.length - 1) {
+                index++;
+                document.querySelector("p").innerText += text.charAt(index);
+            } else {
+                clearInterval(timer);
+            }
+        }, 10)
+    </script>
+</body>
+
+</html>
